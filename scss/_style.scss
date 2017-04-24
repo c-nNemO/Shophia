@@ -63,8 +63,9 @@ header{
   }
   .main-header{
   text-align: center;
-  position: relative;
+  //position: relative;
     ul{
+      outline:1px solid purple;
       float: left;
       li{
         display: inline-block;
@@ -81,12 +82,37 @@ header{
         }
       }
     }
-    &:after {
-      content: '';
-      position: absolute; /* Абсолютное позиционирование */
-      left: 40%; bottom: -215px; /* Положение треугольника */
-      border: 155px solid transparent; /* Прозрачные границы */
-      border-top: 60px solid green; /* Добавляем треугольник */
+
+    //&:after {
+    //  content: '';
+    //  position: absolute; /* Абсолютное позиционирование */
+    //  left: 40%; bottom: -215px; /* Положение треугольника */
+    //  border: 165px solid transparent; /* Прозрачные границы */
+    //  border-top: 50px solid green; /* Добавляем треугольник */
+    //}
+
+    img{
+
+    }
+    .social{
+      outline:1px solid purple;
+      float: right;
+      margin-top: 19px;
+      i{
+        padding: 10px;
+        border-radius: 50%;
+        border: 2px solid #D9BF8F;
+        color:#D9BF8F;
+        margin-right: 10px;
+      }
+      select{
+        color: #fff;
+        background: #000;
+        text-transform: uppercase;
+        padding: 10px;
+        outline: none;
+        margin-left: 30px;
+      }
     }
   }
   &:after{
