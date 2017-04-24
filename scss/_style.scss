@@ -1,0 +1,97 @@
+$menuColor:#393939;
+
+body{
+  font: 100%/1.5em 'Lato', sans-serif;
+}
+.container{
+  width: 90%;
+  margin: 0 auto;
+  padding:0 10px;
+  outline: 1px solid red;
+  //position: relative;
+}
+.clearfix:after{
+  content:" ";
+  display:block;
+  clear:both;
+}
+header{
+  .header{
+    background: #F2F2F2;
+  }
+
+  .top-header{
+    .tel{
+      line-height: 4.5em;
+      font-size: .9em;
+    }
+    ul{
+      float: right;
+      li{
+        display: inline-block;
+        text-transform: uppercase;
+        padding: 20px 10px;
+        &:after{
+          content: "|";
+          margin-left: 20px;
+        }
+        &:last-child:after{
+          display: none;
+        }
+        a{
+          text-decoration: none;
+          color: $menuColor;
+          display: inline-block;
+          position: relative;
+          &:after{
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 1px;
+            background-color: $menuColor;
+            content: "";
+            transition: width 0.2s ;
+          }
+          &:hover:after{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  .main-header{
+  text-align: center;
+  position: relative;
+    ul{
+      float: left;
+      li{
+        display: inline-block;
+        margin-right: 15px;
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          text-decoration: none;
+          font-style: italic;
+          color:$menuColor;
+          font-size: 1.1em;
+          line-height: 4em;
+        }
+      }
+    }
+    &:after {
+      content: '';
+      position: absolute; /* Абсолютное позиционирование */
+      left: 40%; bottom: -215px; /* Положение треугольника */
+      border: 155px solid transparent; /* Прозрачные границы */
+      border-top: 60px solid green; /* Добавляем треугольник */
+    }
+  }
+  &:after{
+    content:" ";
+    display:block;
+    clear:both;
+  }
+}
