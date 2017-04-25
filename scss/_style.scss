@@ -82,17 +82,8 @@ header{
         }
       }
     }
-
-    //&:after {
-    //  content: '';
-    //  position: absolute; /* Абсолютное позиционирование */
-    //  left: 40%; bottom: -215px; /* Положение треугольника */
-    //  border: 165px solid transparent; /* Прозрачные границы */
-    //  border-top: 50px solid green; /* Добавляем треугольник */
-    //}
-
     img{
-
+      margin-left: 4%;
     }
     .social{
       outline:1px solid purple;
@@ -119,5 +110,34 @@ header{
     content:" ";
     display:block;
     clear:both;
+  }
+}
+
+.slider{
+  ul{
+    text-align: center;
+    li{
+      p{
+        background: url("../img/slide-1.jpg") no-repeat;
+        background-size: contain;
+        height: auto;
+        a{
+          display: inline-block;
+          margin: 34% 0 11% 0;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: #fff;
+          background:#F09D66;
+          padding: 8px 20px;
+        }
+      }
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute; /* Абсолютное позиционирование */
+    left: 37%; top: 143px; /* Положение треугольника */
+    border: 165px solid transparent; /* Прозрачные границы */
+    border-top: 50px solid #fff; /* Добавляем треугольник */
   }
 }
