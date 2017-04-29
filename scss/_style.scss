@@ -65,7 +65,6 @@ header{
   text-align: center;
   //position: relative;
     ul{
-      outline:1px solid purple;
       float: left;
       li{
         display: inline-block;
@@ -86,7 +85,6 @@ header{
       margin-left: 4%;
     }
     .social{
-      outline:1px solid purple;
       float: right;
       margin-top: 19px;
       i{
@@ -140,4 +138,33 @@ header{
     border: 165px solid transparent; /* Прозрачные границы */
     border-top: 50px solid #fff; /* Добавляем треугольник */
   }
+}
+
+.features{
+  .left{
+    display: inline-block;
+    position: relative;
+
+    &:after{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 0;
+      height: 0;
+      border: 25px solid transparent;
+      border-left-color: steelblue;
+      border-right: 0;
+    }
+    &:nth-child(1) {
+      //width: 200px;
+      //height: 50px;
+      background: steelblue;
+    }
+    &:nth-child(1):after {
+      top: 0;
+      right: -25px;
+      border-left-color: steelblue;
+    }
+  }
+
 }
